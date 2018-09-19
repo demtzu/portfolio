@@ -5,12 +5,17 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  // text-align: center;
+  text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  h1 {
+    font-weight: 400;
+  }
   p {
     margin-top: 1.5em;
   }
   a {
-    color: rgba(0,0,0,0.4);
+    // color: rgba(0,0,0,0.4);
     font-weight: bold;
     font-size: 16px;
   }
