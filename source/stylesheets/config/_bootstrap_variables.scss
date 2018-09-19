@@ -7,7 +7,7 @@
 $font-family-sans-serif:  $body-font;
 $headings-font-family:    $headers-font;
 $body-bg:                 $light-gray;
-$font-size-base: 18px;
+$font-size-base: 17px;
 
 // Colors
 $gray-base:       $gray;
@@ -25,8 +25,8 @@ $border-radius-small: 2px;
 // Override other variables below!
 
 //** Global textual link color.
-$link-color:            $brand-success !default;
+$link-color:            $brand-primary !default;
 //** Link hover color set via `darken()` function.
-$link-hover-color:      darken($link-color, 15%) !default;
+$link-hover-color:      lighten($link-color, 15%) !default;
 //** Link hover decoration.
 $link-hover-decoration: underline !default;
