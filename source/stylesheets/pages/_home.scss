@@ -20,23 +20,30 @@ $light-purple: #A0C4FB;
     margin-top: 1.5em;
     color: #546583;
   }
+  p.text-intro {
+    max-width: 500px;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+  }
   a {
     // color: rgba(0,0,0,0.4);
     font-weight: bold;
-    font-size: 16px;
+    font-size: 17px;
   }
 }
 
 .button {
   margin: 10px;
-  height: 40px !important;
-  line-height: 40px !important;
+  height: 50px !important;
+  line-height: 50px !important;
   padding: 0 40px;
   box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
   background: $white;
   color: $purple;
   border-radius: 25px;
-  font-size: 12px!important;
+  font-size: 14px!important;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: .025em;
