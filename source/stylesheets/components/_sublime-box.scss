@@ -17,16 +17,17 @@ $color8: #FFCC4E;
   margin: 60px auto 50px auto;
   width: 416px;
   overflow: visible;
-  // transform: scale(0);
-  animation: appear 500ms ease-out forwards;
+  transform: scale(0);
+  animation: appear 1000ms ease-out forwards;
 
   .screen {
     position: relative;
     height: 335px;
-    background-color: $color3;
+    background-image: linear-gradient(to right bottom, #515153, #4b4b4d 10%, #464647 25%, #404042, #3b3b3c 90%, #313132);
     border-radius: 8px;
     color:white;
     font-size:30px;
+    font-family:monospace;
     transform: rotate3d(.5,-.866,0,15deg) rotate(1.5deg);
     box-shadow: 27.1px 62.5px 125px -25px rgba(50,50,93,.5), 16.2px 37.5px 75px -37.5px rgba(0,0,0,.6);
 
@@ -68,71 +69,88 @@ $color8: #FFCC4E;
       height: 100%;
       width: 30px;
       position: absolute;
-      padding-left:8px;
+      padding-left:7px;
       background-color:darken($color3, 7%);
       border-radius: 10px 0 0 7px;
 
       &:after {
         position: absolute;
-        top:24px;
-        content: ". . . . . . . . . .";
+        top:32px;
+        content: ". . . . . . . . . . . . .";
         color:lighten($color3, 10%);
         font-size:42px;
-        line-height:20px;
+        line-height:21.5px;
       }
     }
 
     .code {
       position:absolute;
-      margin: 0 0 0 30px;
+      margin: 10px 0 0 30px;
 
       .row {
         margin-left: 0px;
         margin-right: 0px;
-        margin-top: 7px;
+        margin-top: 5px;
         position:relative;
         padding:8px;
         height:11px;
         p {
-          font-size: 14px;
-          opacity:0;
-          position:relative;
-          display:inline-block;
-          width: random(10) + 200px;
-          height:10px;
+          // opacity:0;
+          // position:relative;
+          // display:inline-block;
+          // width:90px;
+          // height:8px;
           // background-color: white;
           // border-radius:4px;
 
-          &.green {
-            width: random(20) + 60px;
-            background-color: $color5;
-          }
-          &.orange {
-            width: random(10) + 110px;
-            background-color: $color4;
-          }
-          &.blue {
-            width: random(10) + 90px;
-            background-color: $color7;
-          }
-          &.purple {
-            width: random(20) + 30px;
-            background-color: $color6;
-          }
-          &.yellow {
-            width: random(20) + 65px;
-            background-color: $color8;
-          }
-          &.transparent {
-            background-color: transparent;
-            width: 30px;
+          font-size: 13px;
+          opacity:0;
+          position:relative;
+          display:inline-block;
+          width: random(10) + 400px;
 
+          // height:10px;
+          // background-color: white;
+          // border-radius:4px;
+
+          & span.sub-gray {
+            color: #8b8571;
           }
+
+          & span.sub-red {
+            color: #f73472;
+          }
+
+          & span.sub-green {
+            color: #a6e341;
+          }
+
+          & span.sub-orange {
+            color: #fa9d32;
+          }
+
+          & span.sub-yellow {
+            color: #d6c571;
+          }
+
+          & span.sub-purple {
+            color: #b993fb;
+          }
+
+          & span.sub-turquoise {
+            color: #6cd8f4;
+          }
+
+          & span.sub-white {
+            color: #f5fffe;
+          }
+
           &.cursor {
             border-radius:0;
             margin-left:1px;
             background-color: $color1;
             width: 2px;
+            height:16px;
             animation: blink 1s ease 4.6s infinite;
 
           }
@@ -147,8 +165,8 @@ $color8: #FFCC4E;
 
 /* Input text animation */
 $cont:0;
- @for $z from 1 through 9 {
-    @for $i from 1 through 9 {
+ @for $z from 1 through 13 {
+    @for $i from 1 through 13 {
       .row#{$z}>p:nth-child(#{$i}) {
         $cont:400*$z + $i*100 + 600;
         animation: show-text 100ms ease #{$cont}ms forwards;
