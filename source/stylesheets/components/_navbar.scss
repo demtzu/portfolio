@@ -4,10 +4,14 @@
   // background: white;
   transition: all 0.3s ease;
   height: 70px;
-  padding: 0px 30px;
+  // padding: 0px 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position:relative;
+  left: 0;
+  top: 10px;
+  right: 0;
 }
 
 /* Logo */
@@ -21,7 +25,7 @@
 .navbar-wagon-brand img {
   height: 50px;
   &:hover {
-    color: black;
+    fill: black;
     // transform: translateY(-1px);
     // box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
   }

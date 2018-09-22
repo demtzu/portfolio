@@ -14,8 +14,9 @@ $color8: #FFCC4E;
 }
 // Macbook
 .sublime-text {
-  margin: 60px auto 50px auto;
-  width: 416px;
+  // margin: 60px auto 50px auto;
+  width: 430px;
+  padding-top: 10px;
   overflow: visible;
   transform: scale(0);
   animation: appear 1000ms ease-out forwards;
@@ -28,6 +29,7 @@ $color8: #FFCC4E;
     color:white;
     font-size:30px;
     font-family:monospace;
+    overflow:hidden;
     transform: rotate3d(.5,-.866,0,15deg) rotate(1.5deg);
     box-shadow: 27.1px 62.5px 125px -25px rgba(50,50,93,.5), 16.2px 37.5px 75px -37.5px rgba(0,0,0,.6);
 
