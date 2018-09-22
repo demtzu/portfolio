@@ -15,21 +15,28 @@
 }
 
 /* Logo */
+.navbar-wagon-brand {
+    & img {
+      opacity: 0.85;
+      height: 50px;
+    }
+  }
+
 
 .navbar-wagon-brand:hover {
-    fill: black;
-    // transform: translateY(-1px);
-    // box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+    & img {
+      opacity: 1;
+    }
   }
 
-.navbar-wagon-brand img {
-  height: 50px;
-  &:hover {
-    fill: black;
+// .navbar-wagon-brand img {
+//   height: 50px;
+//   &:hover {
+//     fill: black;
     // transform: translateY(-1px);
     // box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
-  }
-}
+//   }
+// }
 
 /* User Avatar */
 .navbar-wagon .avatar {
@@ -58,10 +65,19 @@
 .navbar-wagon-link {
   color: white;
   font-size: 17px;
+  & img {
+    width: 15px;
+    height: 13px;
+    margin-right: 7px;
+    opacity: 0.7;
+  }
 }
 .navbar-wagon-link:hover {
   color: white;
   text-decoration: underline;
+  & img {
+    opacity: 1;
+  }
 }
 
 /* Dropdown menu */
