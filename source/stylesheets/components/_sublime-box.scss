@@ -41,6 +41,21 @@ $color8: #FFCC4E;
        background-color: $color1;
        border-radius: 7px 7px 0 0;
 
+       .title-window-sub {
+        font-size: 10px;
+        margin-left: 71px;
+        margin-top: 8px;
+        position: absolute;
+        padding-top: 0px;
+        color: #2C2B2C;
+       }
+
+       img.ruby {
+          height: 11px;
+          margin-right: 15px;
+          margin-left: 59px;
+        }
+
       .buttons {
         position: absolute;
         width: 8px;
