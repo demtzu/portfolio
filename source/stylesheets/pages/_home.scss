@@ -1,5 +1,5 @@
 .container .container-lg {
-  max-width: 1040px;
+  max-width: 1140px;
 }
 
 // Color button
@@ -125,7 +125,51 @@ $light-purple: #A0C4FB;
   position:relative;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+@media(max-width: 375px) {
+  .container-lg .header .sublime-text {
+    display: none;
+  }
+  .container-lg .terminal {
+    display: none;
+  }
+  .skills {
+    display: none;
+  }
+  .section2 .bg-grey {
+    top: 200vh!important;
+  }
+}
+
+@media(max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .section1 {
+    display: inline-block;
+  }
+  .section1-content {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .section1-content p.text-section1 {
+    max-width: 700px;
+  }
+  .section2 .bg-grey {
+    top: 150vh;
+  }
+}
+
+@media (max-width: 992px) {
+.container {
+    width: 100%;
+  }
+.status {
+    top: 10vh;
+  }
 }
 
 // contenu text section
@@ -158,19 +202,6 @@ $light-purple: #A0C4FB;
     font-weight: bold;
     font-size: 17px;
   }
-}
-
-// contenu colonne gauche
-.skills {
-  position:relative;
-}
-
-.img-circle {
-  // position:absolute;
-
-  width: 160px;
-  height: 160px;
-  box-shadow: 27.1px 62.5px 125px -25px rgba(50,50,93,.5), 16.2px 37.5px 75px -37.5px rgba(0,0,0,.6);
 }
 
 // button desin

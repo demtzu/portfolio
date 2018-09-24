@@ -144,7 +144,7 @@ title: Portfolio | Ahmed Menouni
       </div>
       <div class="terminal-code">
           <div class="row row1">
-            <p><span class="sub-green"><em>➜</em></span> <span class="sub-turquoise">portfolio</span> <span class="sub-blue">git:(</span> <span class="sub-red">master</span><span class="sub-blue">)</span><span class="sub-yellow"> <em>✗</em></span> ruby welcome.rb</p>
+            <p><span class="sub-green"><strong>➜</strong></span> <span class="sub-turquoise">portfolio</span> <span class="sub-blue">git:(</span> <span class="sub-red">master</span><span class="sub-blue">)</span><span class="sub-yellow"> <strong>✗</strong></span> ruby welcome.rb</p>
           </div>
           <div class="row row2">
             <p class="sub-gray">####################</p>
@@ -165,11 +165,45 @@ title: Portfolio | Ahmed Menouni
   <div class="section1">
 
     <div class="skills">
-      <%= image_tag "avatar.jpg", class: "img-circle" %>
+          <div class="skill-icons">
+            <a href="#" class="skill-icon-link">
+            <div class="skill-icon-container ruby">
+              <div class="image skill-icon" style="background-image: url(/images/ruby-icon.svg); width:50px;height:50px;"></div>
+            </div>
+              </a>
+            <div class="skill-icon-container rails">
+              <div class="image skill-icon" style="background-image: url(/images/rails-icon.svg); width:35;height:35px;"></div>
+            </div>
+            <div class="skill-icon-container profil">
+              <div class="image skill-icon img-circle" style="background-image: url(/images/avatar.jpg); width:160px;height:160px;""></div>
+            </div>
+            <div class="skill-icon-container middleman">
+              <div class="image skill-icon " style="background-image: url(/images/middleman-icon.svg); width:40px;height:40px;"></div>
+            </div>
+            <div class="skill-icon-container git">
+              <div class="image skill-icon" style="background-image: url(/images/git-icon.svg); width:35px;height:35px;"></div>
+            </div>
+            <div class="skill-icon-container github">
+              <div class="image skill-icon" style="background-image: url(/images/github-icon.svg); width:50px;height:50px;"></div>
+            </div>
+            <div class="skill-icon-container css">
+              <div class="image skill-icon" style="background-image: url(/images/css-icon.svg); width:50px;height:50px;"></div>
+            </div>
+            <div class="skill-icon-container javascript">
+              <div class="image skill-icon" style="background-image: url(/images/javascript-icon.svg); width:35px;height:35px;"></div>
+            </div>
+            <div class="skill-icon-container postgresql">
+              <div class="image skill-icon" style="background-image: url(/images/postgresql-icon.svg); width:30px;height:30px;"></div>
+            </div>
+            <div class="skill-icon-container html">
+              <div class="image skill-icon" style="background-image: url(/images/html-icon.svg); width:35;height:35px;"></div>
+            </div>
+          </div>
     </div>
+
     <div class="section1-content">
       <h1>Ahmed Menouni</h1>
-      <h3>Full Love Developer ❤️</h3>
+      <h3>Full Love Web Developer ❤️</h3>
       <p class="text-section1">I try to help startups to develop outstanding products. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
       <p><%= link_to "Know more", "#" %></p>
       <p><%= link_to "Get in touch", "#", :class => "btn button--inverse" %>
