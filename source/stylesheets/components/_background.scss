@@ -44,3 +44,49 @@
   grid-area: 5 / span 2 / auto / -1;
   background-color: transparent;
 }
+
+.bg-grey {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 30em;
+  left:0;
+  // top: 0;
+  transform: skewY(-12deg);
+  background: #F7F9FC;
+  display: grid;
+  grid: repeat(5, 80px) / repeat(10, 1fr);
+}
+
+// en haut à gauche
+// .bg-grey :nth-child(1) {
+//   grid-column: span 1;
+//   background-image: linear-gradient(to right, #344c76 50%, #304975, #2b4574, #274272, #223e71);
+// }
+
+// en haut à gauche 2eme
+// .bg-grey :nth-child(2) {
+//   grid-row: 1 / span 1;
+//   grid-column: 2 / span 4;
+//   background-image: linear-gradient(to right top, #364e7a, #314a78, #2c4676, #274273, #223e71);
+// }
+
+// en bas à gauche
+// .bg-grey :nth-child(3) {
+//   grid-row: 5;
+//   grid-column: span 4;
+//   background-image: linear-gradient(to top, #5063aa, #5466b1, #586ab9, #5c6dc0, #6170c8);
+// }
+
+// en bas droite 1er
+.bg-grey :nth-child(4) {
+  grid-area: 4 / span 2 / auto / -2;
+  background-image: linear-gradient(to left, #88b1f7, #7fabf6, #76a5f4, #6d9ef3, #6498f1);
+}
+
+// en bas à droite 2eme
+.bg-grey :nth-child(5) {
+  grid-area: 5 / span 2 / auto / -1;
+  background-color: #C5F0FF;
+}
