@@ -172,7 +172,17 @@ $light-purple: #A0C4FB;
 }
 
 // contenu second secontion
-
+// #section2:before {
+//     content: "";
+//     position: absolute;
+//     z-index: -1;
+//     width: 100%;
+//     height: 180%;
+//     top: 0;
+//     -webkit-transform: skewY(-12deg);
+//     transform: skewY(-12deg);
+//     background: #f6f9fc;
+// }
 
 // button desin
 .button {

@@ -1,0 +1,151 @@
+.iphone-x {
+  height: 724px;
+  width: 357px;
+  background-image: linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 1%, rgba(0,0,0,1) 2%, rgba(255,255,255,1) 5%, rgba(255,255,255,1) 95%, rgba(0,0,0,1) 98%, rgba(255,255,255,1) 99%, rgba(255,255,255,1) 100%);
+  margin: 30px auto;
+  border-radius: 55px;
+  box-sizing: border-box;
+  border: 2px solid black;
+  box-shadow: inset 0px 0px 7px 0px rgba(0,0,0,0.75);
+  position: relative;
+}
+
+.divider-iphone {
+  background: #aaaaaa;
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  &:first-of-type {
+    top: 9%;
+  }
+  &:last-of-type {
+    bottom: 9%;
+  }
+}
+
+.bezel-iphone {
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  background: #565656;
+  background-image: linear-gradient(top, rgba(106,106,106,1) 0%, rgba(0,0,0,1) 1%, rgba(86,86,86,1) 4%, rgba(86,86,86,1) 96%, rgba(0,0,0,1) 99%, rgba(106,106,106,1) 100%);
+  position: relative;
+  left: 5px;
+  top: 5px;
+  border-radius: 48px;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+  border-top: 3px solid #484848;
+  border-bottom: 3px solid #0d0d0d;
+  box-sizing: border-box;
+  box-shadow: inset 0px 0px 7px 0px rgba(190,190,190,.8);
+  z-index:2;
+
+  &::after {
+    content: "";
+    width: calc(100% - 14px);
+    height: calc(100% - 14px);
+    background: #000;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    border-radius: 40px;
+  }
+}
+
+.screen-iphone {
+  z-index:3;
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
+  background: linear-gradient(135deg, #d43f81, #1d368a);
+  background-image:
+  radial-gradient(
+    circle at top right,
+    #f9f6f2 1%,
+    #d43f81 15%,
+    #1d368a 60%,
+    #f9f6f2 100%
+  );
+  // background: url('https://images.apple.com/v/iphone-x/a/images/overview/primary/hero_startframe_large_2x.jpg');
+  background-size: cover;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-radius: 35px;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    width: 56%;
+    height: 4%;
+    background: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 0 0 20px 20px;
+  }
+}
+
+.speaker-iphone {
+  width: 48px;
+  height: 5px;
+  position: absolute;
+  background: #1c1c1c;
+  top: 3.75%;
+  z-index: 4;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border-radius: 3px;
+}
+
+.camera-iphone {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  // background: #1b1c20;
+  position: absolute;
+  z-index: 4;
+  top: 3.5%;
+  right: 38%;
+  background-image: radial-gradient(center, rgba(2,26,60,1) 0%, rgba(49,62,79,1) 8%, rgba(31,62,108,1) 21%, rgba(2,26,60,1) 56%, rgba(2,26,60,1) 100%);
+}
+
+.button-iphone {
+  width: 4px;
+  position: absolute;
+  z-index: 5;
+  background-image: linear-gradient(top, rgba(0,0,0,1) 0%, rgba(244,244,244,1) 15%, rgba(244,244,244,1) 85%, rgba(0,0,0,1) 100%);
+  box-sizing: border-box;
+  border-left: 1px solid #cdcdcd;
+  border-right: 1px solid #303030;
+}
+
+.button-iphone.mute {
+  height: 28px;
+  top: 13%;
+  left: -4px;
+}
+
+.button-iphone.vol-up,
+.button-iphone.vol-down {
+  height: 53px;
+  left: -4px;
+}
+
+.button-iphone.vol-up {
+  top: 21%;
+}
+
+.button-iphone.vol-down {
+  top: 30%;
+}
+
+.button-iphone.right {
+  right: -4px;
+  height: 84px;
+  top: 23.5%;
+  border-right: 1px solid #cdcdcd;
+  border-left: 1px solid #303030;
+}
