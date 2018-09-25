@@ -1,3 +1,13 @@
+html {
+  height: 100%;
+}
+
+body {
+    min-height:100%;
+    position:relative;
+    padding-bottom:100px;
+}
+
 .container .container-lg {
   max-width: 1140px;
 }
@@ -123,11 +133,86 @@ $light-purple: #A0C4FB;
 // contenu first section
 .section1 {
   position:relative;
+  padding-top: 200px;
+  padding-bottom: 200px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
+// contenu text section
+.section1-content {
+  position:relative;
+  color: #2C4468;
+  // display: flex;
+  // align-items: center;
+  // justify-content: flex-end;
+  text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  h1 {
+    font-weight: 400;
+  }
+  p {
+    margin-top: 1.5em;
+    color: #546583;
+  }
+  p.text-section1 {
+    max-width: 500px;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+  }
+  a {
+    // color: rgba(0,0,0,0.4);
+    font-weight: bold;
+    font-size: 17px;
+  }
+}
+
+// contenu second secontion
+
+
+// button desin
+.button {
+  margin: 10px;
+  height: 50px !important;
+  line-height: 50px !important;
+  padding: 0 40px;
+  box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+  background: $white;
+  color: $purple;
+  border-radius: 25px;
+  font-size: 14px!important;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .025em;
+  transition: all .15s ease;
+  cursor: pointer;
+
+
+  &:hover {
+    color: $light-purple;
+    transform: translateY(-1px);
+    box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+  }
+
+  &--inverse {
+    @extend .button;
+    color: $white;
+    background: $purple;
+
+    &:hover {
+      color: $white;
+      background-color: $light-purple;
+    }
+  }
+}
+
+// Media queries breakpoints
+// Defining the breakpoints at which the layout will change,
+// adapting to different screen sizes.
 @media(max-width: 375px) {
   .container-lg .header .sublime-text {
     display: none;
@@ -169,74 +254,6 @@ $light-purple: #A0C4FB;
   }
 .status {
     top: 10vh;
-  }
-}
-
-// contenu text section
-.section1-content {
-  position:relative;
-  padding-top: 200px;
-  color: #2C4468;
-  // display: flex;
-  // align-items: center;
-  // justify-content: flex-end;
-  text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  h1 {
-    font-weight: 400;
-  }
-  p {
-    margin-top: 1.5em;
-    color: #546583;
-  }
-  p.text-section1 {
-    max-width: 500px;
-    margin-top: 20px;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 28px;
-  }
-  a {
-    // color: rgba(0,0,0,0.4);
-    font-weight: bold;
-    font-size: 17px;
-  }
-}
-
-// button desin
-.button {
-  margin: 10px;
-  height: 50px !important;
-  line-height: 50px !important;
-  padding: 0 40px;
-  box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
-  background: $white;
-  color: $purple;
-  border-radius: 25px;
-  font-size: 14px!important;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: .025em;
-  transition: all .15s ease;
-  cursor: pointer;
-
-
-  &:hover {
-    color: $light-purple;
-    transform: translateY(-1px);
-    box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
-  }
-
-  &--inverse {
-    @extend .button;
-    color: $white;
-    background: $purple;
-
-    &:hover {
-      color: $white;
-      background-color: $light-purple;
-    }
   }
 }
 

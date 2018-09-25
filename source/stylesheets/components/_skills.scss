@@ -97,13 +97,24 @@
     transition-delay: .5s;
 }
 
-.skill-icon-container.postgresql {
+.skill-icon-container.materialize {
     animation-delay: -3.9s;
     animation-duration: 4s;
     height: 60px;
     width: 60px;
     margin-left: 210px;
     margin-top: 190px;
+    position: absolute;
+    transition-delay: .8s;
+}
+
+.skill-icon-container.postgresql {
+    animation-delay: -3.9s;
+    animation-duration: 4s;
+    height: 60px;
+    width: 60px;
+    margin-left: 240px;
+    margin-top: -130px;
     position: absolute;
     transition-delay: .8s;
 }
@@ -125,7 +136,7 @@
     height: 80px;
     width: 80px;
     margin-left: 95px;
-    margin-top: 245px;
+    margin-top: -150px;
     position: absolute;
     transition-delay: .6s;
 }
@@ -154,10 +165,10 @@
 .skill-icon-container.rails {
     animation-delay: -1.8s;
     animation-duration: 4s;
-    height: 60px;
-    width: 60px;
-    margin-left: 324px;
-    margin-top: -70px;
+    height: 80px;
+    width: 80px;
+    margin-left: 356px;
+    margin-top: -120px;
     position: absolute;
     transition-delay: .1s;
 }
@@ -172,6 +183,19 @@
     position: absolute;
     transition-delay: .1s;
 }
+
+.skill-icon-container.bootstrap {
+    animation-delay: -2.9s;
+    animation-duration: 4s;
+    height: 80px;
+    width: 80px;
+    margin-left: 95px;
+    margin-top: 245px;
+    position: absolute;
+    transition-delay: .6s;
+}
+
+
 
 .skill-icon-link:hover .skill-icon-container {
   background: #f7f7f7;
