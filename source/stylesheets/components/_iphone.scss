@@ -1,4 +1,6 @@
 .iphone-x {
+  transform: rotate3d(.5,-.866,0,15deg) rotate(1.5deg);
+  // box-shadow: 27.1px 62.5px 125px -25px rgba(50,50,93,.5), 16.2px 37.5px 75px -37.5px rgba(0,0,0,.6);
   height: 724px;
   width: 357px;
   background-image: linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 1%, rgba(0,0,0,1) 2%, rgba(255,255,255,1) 5%, rgba(255,255,255,1) 95%, rgba(0,0,0,1) 98%, rgba(255,255,255,1) 99%, rgba(255,255,255,1) 100%);
@@ -6,7 +8,7 @@
   border-radius: 55px;
   box-sizing: border-box;
   border: 2px solid black;
-  box-shadow: inset 0px 0px 7px 0px rgba(0,0,0,0.75);
+  box-shadow: inset 0px 0px 7px 0px rgba(0,0,0,0.75), 27.1px 62.5px 125px -25px rgba(50,50,93,.5), 16.2px 37.5px 75px -37.5px rgba(0,0,0,.6);;
   position: relative;
 }
 
