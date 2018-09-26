@@ -65,19 +65,19 @@
 //   background-image: linear-gradient(to right, #344c76 50%, #304975, #2b4574, #274272, #223e71);
 // }
 
-// en haut à gauche 2eme
-// .bg-grey :nth-child(2) {
-//   grid-row: 1 / span 1;
-//   grid-column: 2 / span 4;
-//   background-image: linear-gradient(to right top, #364e7a, #314a78, #2c4676, #274273, #223e71);
-// }
+// en haut à gauche 1er
+.bg-grey :nth-child(2) {
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 2;
+  background-image: linear-gradient(to right top, #c5f0ff, #d4f2ff, #e2f4ff 50%, #edf6fe 60%, #f7f9fc);
+}
 
-// en bas à gauche
-// .bg-grey :nth-child(3) {
-//   grid-row: 5;
-//   grid-column: span 4;
-//   background-image: linear-gradient(to top, #5063aa, #5466b1, #586ab9, #5c6dc0, #6170c8);
-// }
+// en haut à droite 1er
+.bg-grey :nth-child(3) {
+  grid-row: 1 / span 1;
+  grid-column: 9 / span 3;
+  background-image: linear-gradient(to left bottom, #c5f0ff, #d4f2ff, #e2f4ff 50%, #edf6fe 60%, #f7f9fc);
+}
 
 // en bas droite 1er
 .bg-grey :nth-child(4) {

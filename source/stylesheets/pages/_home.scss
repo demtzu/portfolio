@@ -168,6 +168,7 @@ $light-purple: #A0C4FB;
     // color: rgba(0,0,0,0.4);
     font-weight: bold;
     font-size: 17px;
+    text-decoration:none;
   }
 }
 
@@ -183,6 +184,7 @@ $light-purple: #A0C4FB;
 .section2-content {
   position:relative;
   color: #2C4468;
+  padding-top: 170px;
   // display: flex;
   // align-items: center;
   // justify-content: flex-end;
@@ -259,8 +261,15 @@ $light-purple: #A0C4FB;
   .skills {
     display: none;
   }
+  .section1 {
+    padding-top: 180px!important;
+    padding-left: 0px!important;
+  }
   .section2 .bg-grey {
     top: 200vh!important;
+  }
+  .iphone-x {
+    display: none;
   }
 }
 
@@ -270,6 +279,8 @@ $light-purple: #A0C4FB;
   }
   .section1 {
     display: inline-block;
+    padding-top: 286px;
+    padding-left: 100px;
   }
   .section1-content {
     width: 100%;
@@ -281,6 +292,10 @@ $light-purple: #A0C4FB;
   }
   .section2 .bg-grey {
     top: 150vh;
+  }
+  // section text iphone
+  .section2-content {
+      max-width: 360px;
   }
 }
 
