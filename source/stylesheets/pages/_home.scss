@@ -65,7 +65,7 @@ $light-purple: #A0C4FB;
   border-radius: 15px;
   background: rgba(0,0,140,.09);
   position: absolute;
-  top: 14vh;
+  top: 90px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -166,9 +166,30 @@ $light-purple: #A0C4FB;
   }
   a {
     // color: rgba(0,0,0,0.4);
-    font-weight: bold;
-    font-size: 17px;
+    font-weight: 500;
+    font-size: 16px;
     text-decoration:none;
+  }
+
+  // skills ul list
+.skills-list {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0 30px;
+    gap: 0 30px;
+    list-style: none;
+}
+
+.skills-list li:before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url(/images/checkmark.svg);
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    // vertical-align: 1px;
   }
 }
 
@@ -184,7 +205,7 @@ $light-purple: #A0C4FB;
 .section2-content {
   position:relative;
   color: #2C4468;
-  padding-top: 170px;
+  padding-top: 80px;
   // display: flex;
   // align-items: center;
   // justify-content: flex-end;
@@ -207,9 +228,35 @@ $light-purple: #A0C4FB;
   }
   a {
     // color: rgba(0,0,0,0.4);
-    font-weight: bold;
-    font-size: 17px;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration:none;
   }
+}
+
+// techno ul list
+.technos {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0 20px;
+    gap: 0 20px;
+    list-style: none;
+}
+
+ul.technos {
+    padding-left: 10px;
+    }
+
+.technos li:before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url(/images/checkmark.svg);
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    // vertical-align: 1px;
 }
 
 // button desin
@@ -259,6 +306,7 @@ $light-purple: #A0C4FB;
     display: none;
   }
   .skills {
+
     display: none;
   }
   .section1 {
@@ -297,14 +345,14 @@ $light-purple: #A0C4FB;
   .section2-content {
       max-width: 360px;
   }
+  .technos {
+      grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 992px) {
 .container {
     width: 100%;
-  }
-.status {
-    top: 10vh;
   }
 }
 
