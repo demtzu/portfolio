@@ -1,7 +1,6 @@
 ---
 title: Portfolio | Ahmed Menouni
 ---
-
 <div class="bg-gradient" aria-hidden="true">
   <span></span>
   <span></span>
@@ -162,6 +161,7 @@ title: Portfolio | Ahmed Menouni
     </div>
   </div>
 
+  <!-- section 1 - What I do -->
   <div class="section1">
 
     <div class="skills">
@@ -239,6 +239,7 @@ title: Portfolio | Ahmed Menouni
     </div>
   </div>
 
+  <!-- section 2 - works -->
   <div class="section2">
 
     <!-- rayures -->
@@ -249,19 +250,80 @@ title: Portfolio | Ahmed Menouni
       <span></span>
       <span></span>
     </div>
+
+    <!-- sans rayure -->
+    <div class="bg-grey2" aria-hidden="true">
+    </div>
+
+    <div class="section2-content">
+      <h1>Heliast</h1>
+      <h3>Delegate your indecision 🤷🏻‍♂️</h3>
+      <p class="text-section2">I try to help startups to develop outstanding products. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      <p><%= link_to "See the demo", "#" %></p>
+      <p><%= link_to "See the repo", "#", :class => "btn button--inverse" %>
+      <%= link_to "Visit the website", "#", :class => "btn button" %></p>
+    </div>
+
+    <div class="iphone-x">
+      <div class="divider-iphone"></div>
+      <div class="bezel-iphone"></div>
+      <div class="screen-iphone">
+        <div class="slider">
+
+          <div class="s-wrap s-type-2" role="slider">
+              <ul class="s-content">
+                <li class="s-item s-item-1"></li>
+                <li class="s-item s-item-2"></li>
+                <li class="s-item s-item-3"></li>
+                <li class="s-item s-item-4"></li>
+                <li class="s-item s-item-5"></li>
+                <li class="s-item s-item-6"></li>
+                <li class="s-item s-item-7"></li>
+                <li class="s-item s-item-8"></li>
+              </ul>
+          </div>
+        </div>
+        <!-- <img src="/images/heliast-screenshot-1.png" style="width:313px;"> -->
+      </div>
+      <div class="speaker-iphone"></div>
+      <div class="camera-iphone"></div>
+      <div class="button-iphone mute"></div>
+      <div class="button-iphone vol-up"></div>
+      <div class="button-iphone vol-down"></div>
+      <div class="button-iphone right"></div>
+      <div class="divider-iphone"></div>
+    </div>
+
+
   </div>
+</div>
+
+  <!-- TODO Simple Caroussel Bootstrap without controls still not working -->
+ <!--  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="/images/heliast-screenshot-1.png" style="width:313px;" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="/images/heliast-screenshot-1.png" style="width:313px;" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="/images/heliast-screenshot-1.png" style="width:313px;" alt="Third slide">
+    </div>
+  </div>
+</div> -->
 
   <!-- TODO Caroussel Bootstrap still not working -->
    <!--  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="d-block w-100" src="/images/heliast-screenshot-1.PNG" style="width:313px;" alt="First slide">
+          <img class="d-block w-100" src="/images/heliast-screenshot-1.png" style="width:313px;" alt="First slide">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="/images/heliast-screenshot-1.PNG" style="width:313px;" alt="Second slide">
+          <img class="d-block w-100" src="/images/heliast-screenshot-1.png" style="width:313px;" alt="Second slide">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="/images/heliast-screenshot-1.PNG" style="width:313px;" alt="Third slide">
+          <img class="d-block w-100" src="/images/heliast-screenshot-1.png" style="width:313px;" alt="Third slide">
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -282,22 +344,8 @@ title: Portfolio | Ahmed Menouni
     </ul>
   </div> -->
 
-  <div class="iphone-x">
-    <div class="divider-iphone"></div>
-    <div class="bezel-iphone"></div>
-    <div class="screen-iphone">
-      <img src="/images/heliast-screenshot-1.png" style="width:313px;">
-    </div>
-    <div class="speaker-iphone"></div>
-    <div class="camera-iphone"></div>
-    <div class="button-iphone mute"></div>
-    <div class="button-iphone vol-up"></div>
-    <div class="button-iphone vol-down"></div>
-    <div class="button-iphone right"></div>
-    <div class="divider-iphone"></div>
-  </div>
 
-</div>
+
 
 <!-- <div class="footer">
   <div class="footer-links">

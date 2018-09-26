@@ -1,0 +1,97 @@
+$switch-speed: 7s;
+$slider-number: 8;
+$slider-width: 100% / $slider-number;
+
+$image1: '/images/heliast-1.png';
+$image2: '/images/heliast-2.png';
+$image3: '/images/heliast-3.png';
+$image4: '/images/heliast-4.png';
+$image5: '/images/heliast-5.png';
+$image6: '/images/heliast-6.png';
+$image7: '/images/heliast-7.png';
+$image8: '/images/heliast-8.png';
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+// .outer-wrapper {
+//   width: 80%;
+//   margin: 50px auto;
+// }
+
+// basic styles
+.s-wrap {
+  // width: 100%;
+  // margin-bottom: 50px;
+  // padding-bottom: 55%;
+  // position: relative;
+  // border: 10px solid #fff;
+  // background-color: #efefe8;
+  // box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  // overflow: hidden;
+
+  > input {
+    display: none;
+  }
+
+  .s-content {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% * $slider-number;
+    height: 100%;
+    font-size: 0;
+    list-style: none;
+    transition: transform $switch-speed;
+  }
+
+  .s-item {
+    display: inline-block;
+    width: $slider-width;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .s-item-1 {background-image: url($image1);}
+  .s-item-2 {background-image: url($image2);}
+  .s-item-3 {background-image: url($image3);}
+  .s-item-4 {background-image: url($image4);}
+  .s-item-5 {background-image: url($image5);}
+  .s-item-6 {background-image: url($image6);}
+  .s-item-7 {background-image: url($image7);}
+  .s-item-8 {background-image: url($image8);}
+}
+
+.s-type-2 {
+  .s-content {
+    animation: slider-animation 50s ease-in-out infinite;
+
+    // &:hover {animation-play-state: paused;}
+  }
+}
+
+@keyframes slider-animation {
+  $i: 0;
+  $j: 0;
+  $times: ($slider-number - 1) * 2;
+  @while $i < 100 {
+    #{$i}%,
+    #{$i + 7}% {
+      @if $i < 50 {
+        transform: translateX(-$slider-width * $j);
+          } @else {
+            transform: translateX(-$slider-width * ($times - $j));
+              }
+    }
+
+    $i: $i + 100 / $times;
+    $j: $j + 1;
+  }
+}

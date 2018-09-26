@@ -10,4 +10,3 @@ gem 'pry-byebug', require: true
 gem 'font-awesome-sass'
 gem 'bootstrap-sass'
 gem 'jquery-middleman'
-
