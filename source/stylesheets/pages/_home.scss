@@ -220,7 +220,7 @@ $light-purple: #A0C4FB;
     color: #546583;
   }
   p.text-section2 {
-    max-width: 500px;
+    max-width: 580px;
     margin-top: 20px;
     font-weight: 400;
     font-size: 17px;
@@ -232,6 +232,15 @@ $light-purple: #A0C4FB;
     font-size: 16px;
     text-decoration:none;
   }
+}
+
+// separator
+.separator {
+  background-color: #edf4f9;
+  border-style: none;
+  height: 2px;
+  margin: 22px 0;
+  width: 100%;
 }
 
 // techno ul list
@@ -258,6 +267,51 @@ ul.technos {
     margin-right: 5px;
     // vertical-align: 1px;
 }
+
+
+.section3 {
+  // padding-top: 200px;
+  // padding-bottom: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 180px;
+}
+
+// contenu text section2
+.section3-content {
+  position:relative;
+  max-width: 500px;
+  color: #2C4468;
+  padding-top: 80px;
+  // display: flex;
+  // align-items: center;
+  // justify-content: flex-end;
+  text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  h1 {
+    font-weight: 400;
+  }
+  p {
+    margin-top: 1.5em;
+    color: #546583;
+  }
+  p.text-section3 {
+    max-width: 580px;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+  }
+  a {
+    // color: rgba(0,0,0,0.4);
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration:none;
+  }
+}
+
 
 // button desin
 .button {
@@ -347,6 +401,9 @@ ul.technos {
   }
   .technos {
       grid-template-columns: 1fr;
+  }
+  .section3-content {
+    max-width: 300px;
   }
 }
 
