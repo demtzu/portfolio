@@ -360,8 +360,11 @@ ul.technos {
     display: none;
   }
   .skills {
-
     display: none;
+  }
+  .section1-content .skills-list {
+    grid-template-columns: 1fr;
+    text-align: left;
   }
   .section1 {
     padding-top: 180px!important;
@@ -371,6 +374,9 @@ ul.technos {
     top: 200vh!important;
   }
   .iphone-x {
+    display: none;
+  }
+  .laptop-container {
     display: none;
   }
 }
