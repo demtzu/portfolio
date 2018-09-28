@@ -7,7 +7,7 @@
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
     <title>Portfolio | Ahmed Menouni</title>
-    <link href="stylesheets/application-1c33c09b.css" rel="stylesheet" />
+    <link href="stylesheets/application-aa35363b.css" rel="stylesheet" />
     <script src="javascripts/application-33a28be4.js"></script>
     <link href="images/am.ico" rel="icon" type="image/ico" />
   </head>
@@ -31,9 +31,9 @@
     <!-- Right Navigation -->
     <div class="navbar-wagon-right hidden-xs hidden-sm">
 
-      <a href="" class="navbar-wagon-item navbar-wagon-link">About</a>
-      <a href="" class="navbar-wagon-item navbar-wagon-link">Works</a>
-      <a href="" class="navbar-wagon-item navbar-wagon-link"><img src="images/contact-187d7013.svg" alt="contact">Contact</a>
+      <a href="#about" class="navbar-wagon-item navbar-wagon-link">About</a>
+      <a href="#works" class="navbar-wagon-item navbar-wagon-link">Works</a>
+      <a href="#contact" class="navbar-wagon-item navbar-wagon-link"><img src="images/contact-187d7013.svg" alt="contact">Contact</a>
 
     </div>
 
@@ -42,9 +42,9 @@
       <div class="dropdown">
         <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown" style="color:white; font-size: 22px;"></i>
         <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Works</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -60,8 +60,8 @@
     <div class="header-content">
       <h1><b>Hey,</b> I'm Ahmed</h1>
       <p class="text-intro">I try to help startups to develop outstanding products. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-      <p><a href="#" class="btn button--inverse">Get in touch</a>
-      <a href="#" class="btn button">See my works</a></p>
+      <p><a href="#contact" class="btn button--inverse">Get in touch</a>
+      <a href="#works" class="btn button">See my works</a></p>
     </div>
 
     <!-- sublime-text window -->
@@ -173,7 +173,7 @@
   </div>
 
   <!-- section 1 - What I do -->
-  <div class="section1">
+  <div class="section1" id="about">
 
     <div class="skills">
           <div class="skill-icons">
@@ -310,13 +310,13 @@
           </li>
       </ul>
       <!-- <p><a href="https://github.com/demtzu" target="_blank" class="fab fa-github"> Github</a></p> -->
-      <p><a href="#" class="btn button--inverse">Get in touch</a>
+      <p><a href="#contact" class="btn button--inverse">Get in touch</a>
       <a href="https://github.com/demtzu" class="btn button">See my Github</a></p>
     </div>
   </div>
 
   <!-- section 2 - works - Heliast -->
-  <div class="section2">
+  <div class="section2" id="works">
 
     <!-- rayures -->
     <div class="bg-grey" aria-hidden="true">
@@ -474,7 +474,7 @@
 
   </div>
 
-<!-- section 3 - works - MeM -->
+  <!-- section 3 - works - MeM -->
   <div class="section3">
 
     <!-- rayures -->
@@ -587,17 +587,96 @@
     </div>
 
   </div>
+
+  <!-- last section - contat form -->
+  <div class="last-section">
+
+    <!-- rayures -->
+    <!-- <div class="bg-blue-lines">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div> -->
+
+    <!-- sans rayure -->
+    <!-- <div class="bg-white2" aria-hidden="true">
+    </div> -->
+
+  </div>
+
 </div>
 
-
 <div class="footer">
-  <div class="footer-links">
-    <a href="https://github.com/demtzu"><i class="fab fa-github"></i></a>
-    <a href="#"><i class="fab fa-linkedin"></i></a>
+
+  <div class="bg-last-grey">
   </div>
-  <div class="footer-copyright">
-    Made with Middleman, hosted on Github Pages.
+  <!-- rayures -->
+  <div class="bg-blue-lines">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
   </div>
+
+  <div class="container container-footer">
+
+    <div class="form-container">
+
+            <div class="form-title">
+                <h3 id="contact">Get in touch</h3>
+                <p>Would you like to share your project with me?</p>
+            </div>
+
+    <form action="https://formspree.io/ahmed.menouni@gmail.com" method="POST">
+
+      <div class="form-group row">
+        <!-- <label for="example-text-input" class="col-2 col-form-label">Name</label> -->
+          <div class="col-12">
+          <input class="form-control" type="text" placeholder="Elon Musk" id="name" name="message">
+          </div>
+      </div>
+
+      <div class="form-group row">
+        <!-- <label for="exampleInputEmail1" class="col-2 col-form-label">Email</label> -->
+        <div class="col-12">
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="elon@spacex.com" name="mail">
+        <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+        </div>
+      </div>
+
+      <div class="form-group row">
+      <!-- <label for="example-url-input" class="col-2 col-form-label">URL</label> -->
+        <div class="col-12">
+        <input class="form-control" type="url" placeholder="https://www.spacex.com" id="example-url-input" name="url">
+        </div>
+       </div>
+
+      <div class="form-group row">
+         <!-- <label for="exampleTextarea" class="col-2 col-form-label">Message</label> -->
+         <div class="col-12">
+         <textarea class="form-control" id="exampleTextarea" rows="3" name="Text" placeholder="Hey..."></textarea>
+        </div>
+       </div>
+       <div class="text-center">
+           <button type="submit" class="btn button--inverse">Send</button>
+       </div>
+    </form>
+
+    </div>
+
+    <div class="footer-links">
+      <a href="https://github.com/demtzu"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <div class="footer-copyright">
+      Made with Middleman, hosted on Github Pages.
+    </div>
+
+  </div>
+
 </div>
 
     <script type="text/javascript">
