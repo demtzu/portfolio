@@ -276,7 +276,7 @@ ul.technos {
   align-items: center;
   justify-content: space-between;
   padding-top: 180px;
-  padding-bottom: 130px;
+  padding-bottom: 700px;
 }
 
 // contenu text section2
@@ -311,6 +311,11 @@ ul.technos {
     font-size: 16px;
     text-decoration:none;
   }
+}
+
+.last-section {
+  // position: relative;
+  // overflow-y: hidden;
 }
 
 
