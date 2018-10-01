@@ -1,0 +1,30 @@
+.body-thanks {
+  height: 100vh;
+  background: linear-gradient(150deg,#344C76 15%,#6776D4 70%, #8CB7FB 94%);
+}
+
+p {
+  text-align: center;
+  padding: 10px 0px 10px 0px;
+}
+
+#thankyou {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.thankyou {
+  padding: 50px 40px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background: white;
+  // opacity: 0.9;
+  box-shadow: 0 50px 100px rgba(50,50,93,.1), 0 15px 35px rgba(50,50,93,.15), 0 5px 15px rgba(0,0,0,.1);
+  height: 350px;
+  width: 660px;
+  border-radius: 10px;
+}
