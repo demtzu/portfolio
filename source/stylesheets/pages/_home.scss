@@ -385,6 +385,9 @@ ul.technos {
   .laptop-container {
     display: none;
   }
+  .form-container {
+    width: 376px;
+  }
 }
 
 @media(max-width: 768px) {
@@ -399,13 +402,14 @@ ul.technos {
   .section1-content {
     width: 100%;
     display: block;
+    padding-top: 338px;
     text-align: center;
   }
   .section1-content p.text-section1 {
-    max-width: 700px;
+    max-width: 550px;
   }
   .section2 .bg-grey {
-    top: 150vh;
+    top: 180vh;
   }
   // section text iphone
   .section2-content {
@@ -413,6 +417,9 @@ ul.technos {
   }
   .technos {
       grid-template-columns: 1fr;
+  }
+  .section3 {
+    padding-top: 85px;
   }
   .section3-content {
     max-width: 300px;
